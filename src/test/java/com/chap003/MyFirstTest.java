@@ -34,5 +34,4 @@ public class MyFirstTest {
         int answer = 2 * 2;
         assertEquals("2 * 2", 4, answer);
     }
-
 }
