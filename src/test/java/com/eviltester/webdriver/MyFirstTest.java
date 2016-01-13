@@ -1,25 +1,18 @@
 package com.eviltester.webdriver;
 
-import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import static org.junit.Assert.*;
 
 public class MyFirstTest {
 
     @Test
-    public void startWebeDriver(){
+    public void checkTwoPlusTwo (){
 
-        System.setProperty("webdriver.chrome.driver", "/Applications/Google Chrome.app/Contents/chromedriver");
+        int answer = 2 + 2;
+        assertEquals("2 + 2 = 4", 4, answer);
 
-        WebDriver driver = new ChromeDriver();
-
-        driver.navigate().to("http://google.com");
-        Assert.assertTrue("title should start with Google", driver.getTitle().startsWith("Google"));
-
-        driver.close();
-        driver.quit();
     }
+
 
 
 }
