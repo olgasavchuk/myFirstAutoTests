@@ -32,4 +32,11 @@ public class IntegerExampleTest {
         assertEquals("21 equals to 15","15", Integer.toHexString(21) );
         assertEquals("3 equals to 3","3", Integer.toHexString(3) );
     }
+
+    @Test
+    public void validateMaxMinIntegerValues(){
+
+        assertEquals("Max value is 2147483647", 2147483647, Integer.MAX_VALUE);
+        assertEquals("Min value is -2147483648", -2147483648, Integer.MIN_VALUE);
+    }
 }
