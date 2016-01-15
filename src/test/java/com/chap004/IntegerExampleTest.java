@@ -7,13 +7,20 @@ import static org.junit.Assert.assertEquals;
 public class IntegerExampleTest {
 
     @Test
-    public void integerExploration(){
+    public void integerExploration() {
 
         Integer four = new Integer(4);
         assertEquals("intValue returns 4", 4, four.intValue());
 
         Integer five = new Integer("5");
         assertEquals("intValue returns 5", 5, five.intValue());
+    }
+
+    @Test
+    public void autoboxingChecking() {
+
+        Integer six = 6;
+        assertEquals("autoboxing 6", 6, six.intValue());
 
     }
 
