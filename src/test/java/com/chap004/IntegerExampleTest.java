@@ -21,7 +21,15 @@ public class IntegerExampleTest {
 
         Integer six = 6;
         assertEquals("autoboxing 6", 6, six.intValue());
+        }
 
+    @Test
+    public void convertIntToHex(){
+
+        int test = 11;
+        assertEquals("11 equals to b", "b", Integer.toHexString(test));
+        assertEquals("10 equals to a","a", Integer.toHexString(10) );
+        assertEquals("21 equals to 15","15", Integer.toHexString(21) );
+        assertEquals("3 equals to 3","3", Integer.toHexString(3) );
     }
-
 }
