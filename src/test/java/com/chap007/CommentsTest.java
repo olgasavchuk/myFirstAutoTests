@@ -23,6 +23,4 @@ public class CommentsTest {
         boolean falsey = Boolean.FALSE;
         assertFalse(falsey);
     }
-
-
 }
