@@ -15,4 +15,29 @@ public class OperationTest {
         assertEquals("asdf", "as"+"df");
         assertEquals(1, 9%2);
     }
+
+    @Test
+    public void assignmentOperatorsExplored() {
+
+        String ab = "ab";
+        assertEquals("ab", ab);
+
+        int num = 10;
+        assertEquals(10, num);
+
+        num += 2;
+        assertEquals(12, num);
+
+        num -= 4;
+        assertEquals(8, num);
+
+        num *= 2;
+        assertEquals(16, num);
+
+        num /= 4;
+        assertEquals(4, num);
+
+        num %=3;
+        assertEquals(1, num);
+    }
 }
