@@ -39,5 +39,8 @@ public class OperationTest {
 
         num %=3;
         assertEquals(1, num);
+
+        num *= 3;
+        assertEquals(3, num);
     }
 }
