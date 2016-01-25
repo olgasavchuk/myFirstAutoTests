@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class IncretemntDecrementTest {
+public class IncrementDecrementTest {
 
     @Test
     public void incrementDecrementOperatorsExplored() {
