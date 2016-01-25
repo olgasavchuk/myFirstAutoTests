@@ -10,8 +10,12 @@ public class IncrementDecrementTest {
     public void incrementDecrementOperatorsExplored() {
 
         int num = 10;
+
+        // num is 11 at the same time with assertEquals function
         assertEquals(11, ++num);
         assertEquals(10, --num);
+
+        // num is 10, and only after assertEquals function it becomes 11
         assertEquals(10, num++);
         assertEquals(11, num);
         assertEquals(11, num--);
