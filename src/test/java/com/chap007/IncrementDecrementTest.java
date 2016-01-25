@@ -22,6 +22,6 @@ public class IncrementDecrementTest {
         assertEquals(10, num);
         assertEquals(9, --num);
         assertEquals(8, --num);
-        assertEquals(8, num++);
+        assertEquals(8, num);
     }
 }
