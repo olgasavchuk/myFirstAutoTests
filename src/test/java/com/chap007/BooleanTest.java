@@ -40,6 +40,7 @@ public class BooleanTest {
         assertTrue(5 >= 4 ? true : false);
     }
 
+    /*
     @Test
     public void bitwiseOperatorExplored() {
         assertEquals(0b0001, 0b1001 & 0b0101);
@@ -62,7 +63,7 @@ public class BooleanTest {
 
         x ^= 0b1110;
         assertEquals(0b0111, x);
-    }
+    } */
 
     @Test
     public void bitwiseShiftOperatorsExplored() {
