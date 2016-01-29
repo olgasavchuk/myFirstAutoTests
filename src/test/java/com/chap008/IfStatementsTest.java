@@ -36,6 +36,48 @@ public class IfStatementsTest {
         if (!truthy) assertFalse(truthy);
     }
 
+    @Test
+    public void callNestedIfElseHorror(){
+        nestedIfElseHorror(true, false);
+        nestedIfElseHorror(true, true);
+        nestedIfElseHorror(false, false);
+        nestedIfElseHorror(false, true);
+
+    }
+
+    public void nestedIfElseHorror(boolean aFirst, boolean aSecond){
+        boolean truthy = aFirst;
+        boolean falsey = aSecond;
+
+        if (truthy){
+            if (!falsey){
+                if ((truthy)&&(!falsey)){
+                    if (falsey||truthy){
+                        System.out.println("T | F");
+                        assertTrue(truthy);
+                        assertFalse(falsey);
+                    }
+                }
+            }else{
+                System.out.println("T | T");
+                assertTrue(truthy);
+                assertTrue(falsey);
+            }
+        }else{
+            if(!truthy){
+                if(falsey){
+                    System.out.println("F | T");
+                    assertTrue(falsey);
+                    assertFalse(truthy);
+                }else{
+                    System.out.println("F | F");
+                    assertFalse(falsey);
+                    assertFalse(truthy);
+                }
+            }
+        }
+    }
+
 
 
 }
