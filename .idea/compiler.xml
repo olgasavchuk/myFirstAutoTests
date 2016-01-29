@@ -27,8 +27,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JAVA for Testers" target="1.5" />
-      <module name="MyFirstAutoTests" target="1.5" />
+      <module name="MyFirstAutoTests" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
