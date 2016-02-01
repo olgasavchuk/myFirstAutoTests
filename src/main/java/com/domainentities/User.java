@@ -25,11 +25,11 @@ public class User {
         this.password = password; //this keyword usage if the construction parameter is the same with the class field
     }
 
-    /*
+
     public String getUsername() {
         return username;
     }
-    */
+
 
     // getter - the function that allows to get an access to the private class field
     public String getPassword() {
