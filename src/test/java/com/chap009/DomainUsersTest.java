@@ -91,4 +91,12 @@ public class DomainUsersTest {
 
     }
 
+    @Test
+    public void SortArray() {
+        String[] workdays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+        Arrays.sort(workdays);
+
+        assertEquals("Friday", workdays[0]);
+        assertEquals("Wednesday", workdays[4]);
+    }
 }
