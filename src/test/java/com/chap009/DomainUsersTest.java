@@ -99,4 +99,13 @@ public class DomainUsersTest {
         assertEquals("Friday", workdays[0]);
         assertEquals("Wednesday", workdays[4]);
     }
+
+    @Test
+    public void SortArrayMixedCase() {
+        String[] workdays = {"monday", "Tuesday", "Wednesday", "thursday", "Friday" };
+        Arrays.sort(workdays);
+
+        assertEquals("Friday", workdays[0]);
+        assertEquals("thursday", workdays[4]);
+    }
 }
