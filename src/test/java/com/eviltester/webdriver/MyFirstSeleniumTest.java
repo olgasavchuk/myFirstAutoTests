@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class MyFirstSeleniumTest {
 
     @Test
-    public void startWebeDriver(){
+    public void startWebDriver(){
 
         System.setProperty("webdriver.chrome.driver", "/Applications/Google Chrome.app/Contents/chromedriver");
 
